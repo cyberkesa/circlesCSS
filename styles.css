@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	padding: 0;
+  }
+  
+  .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .shape {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	border-radius: 50%;
+	opacity: 0.8;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+  }
+  
+  .shape1 {
+	background-color: #FF4136;
+	animation-name: shape1;
+	height: 120px;
+  }
+  
+  .shape2 {
+	background-color: #FF851B;
+	animation-name: shape2;
+  }
+  
+  .shape3 {
+	background-color: #FFDC00;
+	animation-name: shape3;
+  }
+  
+  .shape4 {
+	background-color: #2ECC40;
+	animation-name: shape4;
+  }
+  
+  .shape5 {
+	background-color: #0074D9;
+	animation-name: shape5;
+  }
+  
+  .shape6 {
+	background-color: #B10DC9;
+	animation-name: shape6;
+	height: 120px;
+  }
+  
+  .shape7 {
+	background-color: #F012BE;
+	animation-name: shape7;
+  }
+  
+  .shape8 {
+	background-color: #7FDBFF;
+	animation-name: shape8;
+  }
+  
+  .shape9 {
+	background-color: #39CCCC;
+	animation-name: shape9;
+  }
+  
+  .shape10 {
+	background-color: #01FF70;
+	animation-name: shape10;
+  }
+  
+  @keyframes shape1 {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+  }
+  
+  @keyframes shape2 {
+	from { transform: scale(1); }
+	to { transform: scale(1.5); }
+  }
+  
+  @keyframes shape3 {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(200px); }
+	100% { transform: translateX(0); }
+  }
+  
+  @keyframes shape4 {
+	0% { opacity: 0.1; }
+	50% { opacity: 0.9; }
+	100% { opacity: 0.1; }
+  }
+  
+  @keyframes shape5 {
+	from { border-radius: 50%; }
+	to { border-radius: 0%; }
+  }
+  
+  @keyframes shape6 {
+	0% { transform: rotate(0deg); }
+  	50% { transform: rotate(180deg); }
+  	100% { transform: rotate(360deg); }
+	}
+
+	@keyframes shape7 {
+	0% { transform: rotateX(0deg) rotateY(0deg); }
+	50% { transform: rotateX(180deg) rotateY(360deg); }
+	100% { transform: rotateX(0deg) rotateY(0deg); }
+	}
+
+	@keyframes shape8 {
+	0% { transform: translateY(-100px); }
+	100% { transform: translateY(100px); }
+	}
+
+	@keyframes shape9 {
+	0% { transform: scaleX(1); }
+	50% { transform: scaleX(1.5); }
+	100% { transform: scaleX(1); }
+	}
+
+	@keyframes shape10 {
+	0% { transform: skew(0deg, 0deg); }
+	50% { transform: skew(20deg, -20deg); }
+	100% { transform: skew(0deg, 0deg); }
+	}  
