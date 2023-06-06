@@ -2,7 +2,7 @@ function createShapes() {
   const shapeContainer = document.querySelector(".container");
 
   if (shapeContainer) {
-    const numberArray = [...Array(10)].map((_, index) => index + 1);
+    const numberArray = [...Array(12)].map((_, index) => index + 1);
 
     numberArray.forEach((number) => {
       const div = document.createElement("div");

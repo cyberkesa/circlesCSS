@@ -17,7 +17,7 @@ body {
 	margin: 10px;
 	border-radius: 50%;
 	opacity: 0.85;
-	animation-duration: 4s;
+	animation-duration: 3s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
@@ -44,13 +44,12 @@ body {
 
 .shape5 {
 	background-color: #0074D9;
-	animation-name: shape5, shape55;
+	animation-name: shape5;
 }
 
 .shape6 {
 	background-color: #B10DC9;
 	animation-name: shape6;
-	height: 120px;
 }
 
 .shape7 {
@@ -71,6 +70,16 @@ body {
 .shape10 {
 	background-color: #01FF70;
 	animation-name: shape10;
+}
+
+.shape11 {
+	background-color: #d501ff;
+	animation-name: shape11;
+}
+
+.shape12 {
+	background-color: #01fbff;
+	animation-name: shape12;
 }
 
 @keyframes shape1 {
@@ -214,6 +223,34 @@ body {
 }
 
 @keyframes shape10 {
+	0% {
+		transform: skew(0deg, 0deg);
+	}
+
+	50% {
+		transform: skew(20deg, -20deg);
+	}
+
+	100% {
+		transform: skew(0deg, 0deg);
+	}
+}
+
+@keyframes shape11 {
+	0% {
+		transform: skew(0deg, 0deg);
+	}
+
+	50% {
+		transform: skew(20deg, -20deg);
+	}
+
+	100% {
+		transform: skew(0deg, 0deg);
+	}
+}
+
+@keyframes shape12 {
 	0% {
 		transform: skew(0deg, 0deg);
 	}
