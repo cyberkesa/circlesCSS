@@ -16,7 +16,7 @@ body {
 	height: 100px;
 	margin: 10px;
 	border-radius: 50%;
-	opacity: 0.8;
+	opacity: 0.85;
 	animation-duration: 4s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -25,7 +25,6 @@ body {
 .shape1 {
 	background-color: #FF4136;
 	animation-name: shape1;
-	height: 120px;
 }
 
 .shape2 {
@@ -75,11 +74,18 @@ body {
 }
 
 @keyframes shape1 {
-	from {
+	0% {
+		height: 100px;
 		transform: rotate(0deg);
 	}
 
-	to {
+	50% {
+		height: 120px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		height: 100px;
 		transform: rotate(360deg);
 	}
 }
@@ -114,15 +120,15 @@ body {
 
 @keyframes shape4 {
 	0% {
-		opacity: 0.1;
+		opacity: 1;
 	}
 
 	50% {
-		opacity: 0.9;
+		opacity: 0.1;
 	}
 
 	100% {
-		opacity: 0.1;
+		opacity: 1;
 	}
 }
 
@@ -142,15 +148,18 @@ body {
 
 @keyframes shape6 {
 	0% {
+		height: 100px;
 		transform: rotate(0deg);
 	}
 
 	50% {
-		transform: rotate(180deg);
+		height: 120px;
+		transform: rotate(360deg);
 	}
 
 	100% {
-		transform: rotate(360deg);
+		height: 100px;
+		transform: rotate(180deg);
 	}
 }
 
@@ -170,15 +179,23 @@ body {
 
 @keyframes shape8 {
 	0% {
-		transform: translateY(-100px);
+		transform: translateY(0px);
+	}
+
+	25% {
+		transform: translateY(-75px);
 	}
 
 	50% {
-		transform: translateY(100px);
+		transform: translateY(0px);
+	}
+
+	75% {
+		transform: translateY(75px);
 	}
 
 	100% {
-		transform: translateY(-100px);
+		transform: translateY(0px);
 	}
 }
 
