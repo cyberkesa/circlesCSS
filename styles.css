@@ -11,6 +11,13 @@ body {
 	height: 100vh;
 }
 
+.shape-wrapper {
+	min-height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .shape {
 	width: 100px;
 	height: 100px;
@@ -18,7 +25,7 @@ body {
 	border-radius: 50%;
 	opacity: 0.85;
 	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: ease-out;
 	animation-iteration-count: infinite;
 }
 
